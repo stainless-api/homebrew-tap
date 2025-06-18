@@ -5,13 +5,13 @@
 class Stl < Formula
   desc "The official CLI for stainless."
   homepage "https://stainless.com"
-  version "0.1.0-alpha.14"
+  version "0.1.0-alpha.15"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/stainless-api/stainless-api-cli/releases/download/v0.1.0-alpha.14/stl_0.1.0-alpha.14_macos_amd64.zip"
-      sha256 "9fe7cb882e4d586e8bb17deadab031bc2718f6d2137bf7d8eb1b22e35e61757e"
+      url "https://github.com/stainless-api/stainless-api-cli/releases/download/v0.1.0-alpha.15/stl_0.1.0-alpha.15_macos_amd64.zip"
+      sha256 "798c2a784d8b4da1308557c05ed7f50d376e0e0221449572f7832cd327943188"
 
       def install
         bin.install "stl"
@@ -21,8 +21,8 @@ class Stl < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/stainless-api/stainless-api-cli/releases/download/v0.1.0-alpha.14/stl_0.1.0-alpha.14_macos_arm64.zip"
-      sha256 "812bdcb92bcfb6e036f578a671c1eaf06f6d328360d0ea15c6d10b959b6a525e"
+      url "https://github.com/stainless-api/stainless-api-cli/releases/download/v0.1.0-alpha.15/stl_0.1.0-alpha.15_macos_arm64.zip"
+      sha256 "1c46a61f83c11d974bb2743e6e01070ad109ae6fb670535f588aa01abb66926c"
 
       def install
         bin.install "stl"
@@ -35,8 +35,8 @@ class Stl < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/stainless-api/stainless-api-cli/releases/download/v0.1.0-alpha.14/stl_0.1.0-alpha.14_linux_amd64.tar.gz"
-      sha256 "48b5cb3303eab95d39eb047e9fe91b1cc5177cd11f0fc8bc57e7a3956442804b"
+      url "https://github.com/stainless-api/stainless-api-cli/releases/download/v0.1.0-alpha.15/stl_0.1.0-alpha.15_linux_amd64.tar.gz"
+      sha256 "fbd44e48214ea4a147401515aab80babcf32317b93e28d4727c9754888a6273c"
       def install
         bin.install "stl"
         bash_completion.install "completions/stl.bash" => "stl"
@@ -45,8 +45,8 @@ class Stl < Formula
       end
     end
     if Hardware::CPU.arm? and !Hardware::CPU.is_64_bit?
-      url "https://github.com/stainless-api/stainless-api-cli/releases/download/v0.1.0-alpha.14/stl_0.1.0-alpha.14_linux_armv6.tar.gz"
-      sha256 "5188b2e519c9f072a81a6fbedfe6e7b1774fe09f167c82c0873657367e6929bb"
+      url "https://github.com/stainless-api/stainless-api-cli/releases/download/v0.1.0-alpha.15/stl_0.1.0-alpha.15_linux_armv6.tar.gz"
+      sha256 "f162ac10d68295bf6b092b609eedd9a0034b374daa986c8ac174a2eecc4644e3"
       def install
         bin.install "stl"
         bash_completion.install "completions/stl.bash" => "stl"
@@ -55,8 +55,8 @@ class Stl < Formula
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/stainless-api/stainless-api-cli/releases/download/v0.1.0-alpha.14/stl_0.1.0-alpha.14_linux_arm64.tar.gz"
-      sha256 "421fcda81b134d46bb1ed7333ea594fa977d1939a08565822c384404c940e05d"
+      url "https://github.com/stainless-api/stainless-api-cli/releases/download/v0.1.0-alpha.15/stl_0.1.0-alpha.15_linux_arm64.tar.gz"
+      sha256 "3ed95c4276a5330467e2d01b087fd2afaa47755286acfba108cad39e13fc2ec5"
       def install
         bin.install "stl"
         bash_completion.install "completions/stl.bash" => "stl"
