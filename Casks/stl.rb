@@ -3,7 +3,7 @@ cask "stl" do
   name "stl"
   desc "The official CLI for stainless."
   homepage "https://stainless.com"
-  version "0.1.0-alpha.58"
+  version "0.1.0-alpha.59"
 
   livecheck do
     skip "Auto-generated on release."
@@ -18,22 +18,22 @@ cask "stl" do
   on_macos do
     on_intel do
       url "https://github.com/stainless-api/stainless-api-cli/releases/download/v#{version}/stl_#{version}_macos_amd64.zip"
-      sha256 "a504fe1b5fceb9b0ee48b711e3c8974452bb4f0aaa7a814fa2096c8ea58f065f"
+      sha256 "476828b849fc79692f061bdd458d226d771eebcdb5ede905c28b76214d09c5e5"
     end
     on_arm do
       url "https://github.com/stainless-api/stainless-api-cli/releases/download/v#{version}/stl_#{version}_macos_arm64.zip"
-      sha256 "c397d0205aa527f93e3916b4b9c5b8afaded5e693cfea03cd0354254451bcf0c"
+      sha256 "fd3cb17be2ac77258b8026182b2745815f0f087e1b2055984cf43ff2504efc7e"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/stainless-api/stainless-api-cli/releases/download/v#{version}/stl_#{version}_linux_amd64.tar.gz"
-      sha256 "6f9d531bc56fd4d52f8e0711071a3f52a039a15762ccaab11b22e74b29c3e4eb"
+      sha256 "fa5136745609b9581957b15683063420f8e0bbf1ad0360d64c50dda12e201c72"
     end
     on_arm do
       url "https://github.com/stainless-api/stainless-api-cli/releases/download/v#{version}/stl_#{version}_linux_arm64.tar.gz"
-      sha256 "5799de9dbb203b83a666d4636e8a3fa6bbdcf5ef2fcbdb26f4400e1e3303b51b"
+      sha256 "a72b37fe397830b4e6e274e6f6d2a5e2733abd36607a0adec87912b9fcf4257f"
     end
   end
 
